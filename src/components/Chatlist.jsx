@@ -45,7 +45,7 @@ const Chatlist = ({ setSelectedUser }) => {
         <section className="relative hidden lg:flex flex-col item-start justify-start bg-white h-[100vh] w-[100%] md:w-[600px]">
             <header className="flex items-center justify-between w-[100%] lg:border-b border-b-1 border-[#898989b9] p-4 sticky md:static top-0 z-[100]">
                 <main className="flex items-center gap-3">
-                    <img src={defaultAvatar} className="w-[44px] h-[44px] object-cover rounded-full" alt="" />
+                    <img src={user?.image || defaultAvatar} className="w-[44px] h-[44px] object-cover rounded-full" alt="" />
                     <span>
                         <h3 className="p-0 font-semibold text-[#2A3D39] md:text-[17px]">{user?.fullName || "ChatFrik user"}</h3>
                         <p className="p-0 font-light text-[#2A3D39] text-[15px]">@{user?.username || "chatfrik"}</p>
@@ -63,7 +63,7 @@ const Chatlist = ({ setSelectedUser }) => {
                 </header>
             </div>
 
-            <main className="flex flex-col items-start mt-[1.5rem] pb-3">
+            <main className="flex flex-col items-start mt-[1.5rem] pb-3 custom-scrollbar w-[100%] h-[100%]">
                 {sortedChats?.map((chat) => (
                     <button key={chat?.id} className="flex items-start justify-between w-[100%] border-b border-[#9090902c] px-5 pb-3 pt-3">
                         {chat?.users

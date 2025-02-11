@@ -10,7 +10,6 @@ const App = () => {
     const [isLogin, setIsLogin] = useState(true);
     const [user, setUser] = useState(null);
     const [selectedUser, setSelectedUser] = useState(null);
-
     useEffect(() => {
         const currentUser = auth.currentUser;
         if (currentUser) {

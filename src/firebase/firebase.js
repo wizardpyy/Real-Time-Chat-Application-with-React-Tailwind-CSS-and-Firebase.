@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-import { addDoc, collection, doc, getDoc, getFirestore, onSnapshot, serverTimestamp, setDoc, updateDoc } from "firebase/firestore";
+import { addDoc, collection, doc, getDoc, getDocs, getFirestore, onSnapshot, serverTimestamp, setDoc, updateDoc } from "firebase/firestore";
 
 const firebaseConfig = {
     apiKey: "AIzaSyANw2cAih982NdfIoPLSHN8hYomDFl9s70",
@@ -73,5 +73,32 @@ export const listenForMessages = (chatId, setMessages) => {
         setMessages(messages);
     });
 };
+
+// Function to update user images (Note, we did not use this function in the project tutorial)
+// export async function updateUsersImages() {
+//     // Step 1: Fetch the users collection from Firestore
+//     const usersRef = collection(db, "users");
+//     const querySnapshot = await getDocs(usersRef);
+
+//     // Step 2: Loop through the users and update the image field using `for...of`
+//     let index = 1; // Start with img=1
+
+//     // Use a for...of loop to handle async calls sequentially
+//     for (const docSnapshot of querySnapshot.docs) {
+//         const userDoc = doc(db, "users", docSnapshot.id);
+
+//         // Construct the new image URL
+//         const imageUrl = `https://i.pravatar.cc/150?img=${index}`;
+
+//         // Step 3: Update the user document with the new image URL
+//         await updateDoc(userDoc, {
+//             image: imageUrl, // assuming 'image' is the field to update
+//         });
+
+//         index++; // Increment the image number for the next user
+//     }
+
+//     console.log("All user images updated successfully!");
+// }
 
 export { auth, db };
