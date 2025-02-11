@@ -58,7 +58,7 @@ const Chatbox = ({ selectedUser }) => {
         <>
             {selectedUser ? (
                 <section className="flex flex-col items-start justify-start h-screen w-[100%] background-image">
-                    <header className="border-b border-gray-400 w-[100%] h-[82px] m:h-fit p-4 bg-white">
+                    <header className="w-[100%] h-[82px] m:h-fit p-4 bg-white">
                         <main className="flex items-center gap-3">
                             <span>
                                 <img src={selectedUser?.image || defaultAvatar} className="w-11 h-11 object-cover rounded-full" alt="" />
