@@ -12,4 +12,5 @@ This real-time chat application leverages the power of **React**, **Tailwind CSS
 
 This project is a great choice for anyone looking to build a real-time, full-stack chat application with minimal backend management while maintaining a high level of flexibility and customization.
 
-### Youtube Tutorial will be out soon
+### Youtube Tutorial
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y7wbzq1j9g0?si=13fbge1ncZR_Lgbd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
