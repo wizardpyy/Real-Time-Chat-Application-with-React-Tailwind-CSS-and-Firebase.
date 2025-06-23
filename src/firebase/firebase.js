@@ -3,12 +3,13 @@ import { getAuth } from "firebase/auth";
 import { addDoc, collection, doc, getDoc, getDocs, getFirestore, onSnapshot, serverTimestamp, setDoc, updateDoc } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyANw2cAih982NdfIoPLSHN8hYomDFl9s70",
-    authDomain: "chat-app-2e9c9.firebaseapp.com",
-    projectId: "chat-app-2e9c9",
-    storageBucket: "chat-app-2e9c9.firebasestorage.app",
-    messagingSenderId: "444449458629",
-    appId: "1:444449458629:web:e610c576249f715d1d63ac",
+  apiKey: "AIzaSyCO_1O58YC-hpNCwroRK1sxji_cHI4ImvM",
+  authDomain: "chat-app-3d7af.firebaseapp.com",
+  projectId: "chat-app-3d7af",
+  storageBucket: "chat-app-3d7af.firebasestorage.app",
+  messagingSenderId: "721781130044",
+  appId: "1:721781130044:web:567827862be30a6085d439",
+  measurementId: "G-TTKV85Y16V"
 };
 
 const app = initializeApp(firebaseConfig);
